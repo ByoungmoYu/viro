@@ -118,6 +118,25 @@ RCT_EXPORT_METHOD(resetARSession:(nonnull NSNumber *)reactTag
     }];
 }
 
+RCT_EXPORT_METHOD(setARTrackType:(nonnull NSNumber *)reactTag
+                  trackType:(NSString *)trackingType) {
+        RCTLogInfo(@"start");
+    [self.bridge.uiManager addUIBlock:^(__unused RCTUIManager *uiManager, NSDictionary<NSNumber *, UIView *> *viewRegistry) {
+        VRTView *view = (VRTView *)viewRegistry[reactTag];
+        if (![view isKindOfClass:[VRTARSceneNavigator class]]) {
+            RCTLogError(@"Invalid view returned from registry, expecting VRTARSceneNavigator, got: %@", view);
+        } else {
+            RCTLogInfo(@"before");
+            VRTARSceneNavigator *component = (VRTARSceneNavigator *)view;
+            RCTLogInfo(@"after component");
+            VROViewAR *view = (VROViewAR *)[component rootVROView];
+            RCTLogInfo(@"after view");
+            view.getARSession->setTrackingType(VROTrackingType::Front);
+            RCTLogInfo(@"after track");
+        }
+    }];
+}
+
 RCT_EXPORT_METHOD(setWorldOrigin:(nonnull NSNumber *)reactTag
                      worldOrigin:(NSDictionary *)worldOrigin) {
     [self.bridge.uiManager addUIBlock:^(__unused RCTUIManager *uiManager, NSDictionary<NSNumber *, UIView *> *viewRegistry) {
