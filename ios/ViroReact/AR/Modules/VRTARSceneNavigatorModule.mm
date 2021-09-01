@@ -106,6 +106,7 @@ RCT_EXPORT_METHOD(takeScreenshot:(nonnull NSNumber *)reactTag
 RCT_EXPORT_METHOD(resetARSession:(nonnull NSNumber *)reactTag
                   resetTracking:(BOOL)resetTracking
                   removeAnchors:(BOOL)removeAnchors) {
+                      RCTLogInfo(@"start resetARSession");
     [self.bridge.uiManager addUIBlock:^(__unused RCTUIManager *uiManager, NSDictionary<NSNumber *, UIView *> *viewRegistry) {
         VRTView *view = (VRTView *)viewRegistry[reactTag];
         if (![view isKindOfClass:[VRTARSceneNavigator class]]) {
