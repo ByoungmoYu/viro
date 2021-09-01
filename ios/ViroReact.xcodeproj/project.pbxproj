@@ -317,8 +317,6 @@
 		13F6302D205761B100A74EFC /* VRT3DSceneNavigatorModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13F6302C205761B100A74EFC /* VRT3DSceneNavigatorModule.mm */; };
 		13F63033205762CB00A74EFC /* VRT3DSceneNavigatorManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13F63032205762CB00A74EFC /* VRT3DSceneNavigatorManager.mm */; };
 		13F630362057644D00A74EFC /* VRT3DSceneNavigator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13F630352057644D00A74EFC /* VRT3DSceneNavigator.mm */; };
-		236CE15FB691A995D2DE91A1 /* libPods-ViroReact_static_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F958EFD22BC49F2EF3DBAF /* libPods-ViroReact_static_lib.a */; };
-		7B08617F151E92AD2CC5B5C6 /* libPods-ViroReact_release_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E371BA5881A4F905FA5A241 /* libPods-ViroReact_release_tests.a */; };
 		8A04D4E02023EDDF00FD5F68 /* VRTARTrackingTargetsModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A04D4DF2023EDDF00FD5F68 /* VRTARTrackingTargetsModule.mm */; };
 		8A04D5182024F6B200FD5F68 /* VRTARImageMarkerManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A04D5172024F6B200FD5F68 /* VRTARImageMarkerManager.mm */; };
 		8A04D51B2024F7AA00FD5F68 /* VRTARImageMarker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A04D51A2024F7AA00FD5F68 /* VRTARImageMarker.mm */; };
@@ -528,20 +526,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		131E1ED120B89C190075D8E0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 080D7323FFBA699FD466424B6566634E;
-			remoteInfo = "Pods-ViroReact_release_tests";
-		};
-		1385B2B020CA0A5200C3B6CE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 73C4B0CA254A092A0B27877FCAAD1D04;
-			remoteInfo = "Pods-ViroReact_static_lib";
-		};
 		8BDD9DA21E09F39B00A42870 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
@@ -562,13 +546,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = ABFEEA82A6C346B22843FBE0B0582182;
 			remoteInfo = FBReactNativeSpec;
-		};
-		A230928A248F709800A5A81F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06489499588BFA8FD5E63DD6375CD533;
-			remoteInfo = Folly;
 		};
 		A230928C248F709800A5A81F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -695,6 +672,34 @@
 			proxyType = 2;
 			remoteGlobalIDString = 65D0A19C165FA1126B1360680FE6DB12;
 			remoteInfo = Yoga;
+		};
+		F8DE9F2526DFDB5C00C68DB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4BDA69E3BCB0166D49FB679ABADCA00;
+			remoteInfo = fmt;
+		};
+		F8DE9F2726DFDB5C00C68DB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1936453FF2A7E3A13063C4917C4D5598;
+			remoteInfo = "RCT-Folly";
+		};
+		F8DE9F2926DFDB5C00C68DB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FE6D792B6328AAF68E46924D7F466631;
+			remoteInfo = "React-Core-AccessibilityResources";
+		};
+		F8DE9F2B26DFDB5C00C68DB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 666E72807891C591E025A75410CD2A26;
+			remoteInfo = "React-perflogger";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -955,12 +960,8 @@
 		13F63032205762CB00A74EFC /* VRT3DSceneNavigatorManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VRT3DSceneNavigatorManager.mm; sourceTree = "<group>"; };
 		13F630342057642500A74EFC /* VRT3DSceneNavigator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VRT3DSceneNavigator.h; sourceTree = "<group>"; };
 		13F630352057644D00A74EFC /* VRT3DSceneNavigator.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VRT3DSceneNavigator.mm; sourceTree = "<group>"; };
-		1E371BA5881A4F905FA5A241 /* libPods-ViroReact_release_tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ViroReact_release_tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		20F958EFD22BC49F2EF3DBAF /* libPods-ViroReact_static_lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ViroReact_static_lib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		24F1137CD82BA3E4D836FBA1 /* Pods-ViroReact_static_lib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViroReact_static_lib.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViroReact_static_lib/Pods-ViroReact_static_lib.release.xcconfig"; sourceTree = "<group>"; };
 		26E68AF050CB842CF2264F09 /* Pods-ViroReact.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViroReact.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViroReact/Pods-ViroReact.debug.xcconfig"; sourceTree = "<group>"; };
 		7927738EE26175BE7394889B /* libPods-ViroReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ViroReact.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8737B88293C9F8DE1C4F5FB9 /* Pods-ViroReact_release_tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViroReact_release_tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViroReact_release_tests/Pods-ViroReact_release_tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A04D4DE2023EDDF00FD5F68 /* VRTARTrackingTargetsModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VRTARTrackingTargetsModule.h; path = ViroReact/AR/Modules/VRTARTrackingTargetsModule.h; sourceTree = "<group>"; };
 		8A04D4DF2023EDDF00FD5F68 /* VRTARTrackingTargetsModule.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = VRTARTrackingTargetsModule.mm; path = ViroReact/AR/Modules/VRTARTrackingTargetsModule.mm; sourceTree = "<group>"; };
 		8A04D5162024F6B200FD5F68 /* VRTARImageMarkerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VRTARImageMarkerManager.h; path = ViroReact/AR/Managers/VRTARImageMarkerManager.h; sourceTree = "<group>"; };
@@ -1184,8 +1185,6 @@
 		A5F6D4001E4B0DFF00655F60 /* VRTController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = VRTController.mm; path = ViroReact/Views/VRTController.mm; sourceTree = "<group>"; };
 		A5F6D4031E4B179700655F60 /* VRTControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VRTControllerManager.h; path = ViroReact/VRTControllerManager.h; sourceTree = "<group>"; };
 		A5F6D4041E4B179700655F60 /* VRTControllerManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = VRTControllerManager.mm; path = ViroReact/VRTControllerManager.mm; sourceTree = "<group>"; };
-		B955E98ED74516070EE079F5 /* Pods-ViroReact_release_tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViroReact_release_tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViroReact_release_tests/Pods-ViroReact_release_tests.release.xcconfig"; sourceTree = "<group>"; };
-		FDD4EDD8C10B59A4481813F9 /* Pods-ViroReact_static_lib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViroReact_static_lib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViroReact_static_lib/Pods-ViroReact_static_lib.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1194,7 +1193,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				131E1E6820B89A560075D8E0 /* ViroKit.framework in Frameworks */,
-				7B08617F151E92AD2CC5B5C6 /* libPods-ViroReact_release_tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1203,7 +1201,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1385B2A320CA099F00C3B6CE /* ViroKit_static_lib.framework in Frameworks */,
-				236CE15FB691A995D2DE91A1 /* libPods-ViroReact_static_lib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1225,8 +1222,6 @@
 				8BDD9FF21E53C8AF00A42870 /* libReact.a */,
 				7927738EE26175BE7394889B /* libPods-ViroReact.a */,
 				1385B2A220CA099F00C3B6CE /* ViroKit_static_lib.framework */,
-				1E371BA5881A4F905FA5A241 /* libPods-ViroReact_release_tests.a */,
-				20F958EFD22BC49F2EF3DBAF /* libPods-ViroReact_static_lib.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1306,18 +1301,19 @@
 			children = (
 				A2309287248F709800A5A81F /* libDoubleConversion.a */,
 				A2309289248F709800A5A81F /* libFBReactNativeSpec.a */,
-				A230928B248F709800A5A81F /* libFolly.a */,
+				F8DE9F2626DFDB5C00C68DB7 /* libfmt.a */,
 				A230928D248F709800A5A81F /* libglog.a */,
 				8BDD9DA31E09F39B00A42870 /* libPods-ViroReact.a */,
-				131E1ED220B89C190075D8E0 /* libPods-ViroReact_release_tests.a */,
-				1385B2B120CA0A5200C3B6CE /* libPods-ViroReact_static_lib.a */,
+				F8DE9F2826DFDB5C00C68DB7 /* libRCT-Folly.a */,
 				A230928F248F709800A5A81F /* libRCTTypeSafety.a */,
 				A2309291248F709800A5A81F /* libReact-Core.a */,
+				F8DE9F2A26DFDB5C00C68DB7 /* AccessibilityResources.bundle */,
 				A2309293248F709800A5A81F /* libReact-CoreModules.a */,
 				A2309295248F709800A5A81F /* libReact-cxxreact.a */,
 				A2309297248F709800A5A81F /* libReact-jsi.a */,
 				A2309299248F709800A5A81F /* libReact-jsiexecutor.a */,
 				A230929B248F709800A5A81F /* libReact-jsinspector.a */,
+				F8DE9F2C26DFDB5C00C68DB7 /* libReact-perflogger.a */,
 				A230929D248F709800A5A81F /* libReact-RCTAnimation.a */,
 				A230929F248F709800A5A81F /* libReact-RCTBlob.a */,
 				A23092A1248F709800A5A81F /* libReact-RCTImage.a */,
@@ -1598,10 +1594,6 @@
 				8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */,
 				26E68AF050CB842CF2264F09 /* Pods-ViroReact.debug.xcconfig */,
 				8EB99B003C13099B09EC75DC /* Pods-ViroReact.release.xcconfig */,
-				8737B88293C9F8DE1C4F5FB9 /* Pods-ViroReact_release_tests.debug.xcconfig */,
-				B955E98ED74516070EE079F5 /* Pods-ViroReact_release_tests.release.xcconfig */,
-				FDD4EDD8C10B59A4481813F9 /* Pods-ViroReact_static_lib.debug.xcconfig */,
-				24F1137CD82BA3E4D836FBA1 /* Pods-ViroReact_static_lib.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1613,7 +1605,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 131E1ECA20B89A560075D8E0 /* Build configuration list for PBXNativeTarget "ViroReact_release_tests" */;
 			buildPhases = (
-				131E1DFB20B89A560075D8E0 /* [CP] Check Pods Manifest.lock */,
 				131E1DFC20B89A560075D8E0 /* Sources */,
 				131E1E6720B89A560075D8E0 /* Frameworks */,
 				131E1E6B20B89A560075D8E0 /* ShellScript */,
@@ -1631,7 +1622,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1385B29920CA091C00C3B6CE /* Build configuration list for PBXNativeTarget "ViroReact_static_lib" */;
 			buildPhases = (
-				1385B1CB20CA091C00C3B6CE /* [CP] Check Pods Manifest.lock */,
 				1385B1CC20CA091C00C3B6CE /* Sources */,
 				1385B23720CA091C00C3B6CE /* Frameworks */,
 				1385B23A20CA091C00C3B6CE /* CopyFiles */,
@@ -1712,20 +1702,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		131E1ED220B89C190075D8E0 /* libPods-ViroReact_release_tests.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libPods-ViroReact_release_tests.a";
-			remoteRef = 131E1ED120B89C190075D8E0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1385B2B120CA0A5200C3B6CE /* libPods-ViroReact_static_lib.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libPods-ViroReact_static_lib.a";
-			remoteRef = 1385B2B020CA0A5200C3B6CE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		8BDD9DA31E09F39B00A42870 /* libPods-ViroReact.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1745,13 +1721,6 @@
 			fileType = archive.ar;
 			path = libFBReactNativeSpec.a;
 			remoteRef = A2309288248F709800A5A81F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A230928B248F709800A5A81F /* libFolly.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libFolly.a;
-			remoteRef = A230928A248F709800A5A81F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		A230928D248F709800A5A81F /* libglog.a */ = {
@@ -1880,27 +1849,37 @@
 			remoteRef = A23092AE248F709800A5A81F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		F8DE9F2626DFDB5C00C68DB7 /* libfmt.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libfmt.a;
+			remoteRef = F8DE9F2526DFDB5C00C68DB7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F8DE9F2826DFDB5C00C68DB7 /* libRCT-Folly.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCT-Folly.a";
+			remoteRef = F8DE9F2726DFDB5C00C68DB7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F8DE9F2A26DFDB5C00C68DB7 /* AccessibilityResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AccessibilityResources.bundle;
+			remoteRef = F8DE9F2926DFDB5C00C68DB7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F8DE9F2C26DFDB5C00C68DB7 /* libReact-perflogger.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReact-perflogger.a";
+			remoteRef = F8DE9F2B26DFDB5C00C68DB7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		131E1DFB20B89A560075D8E0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ViroReact_release_tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		131E1E6B20B89A560075D8E0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1913,24 +1892,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = $SRCROOT/ngrok_launch.sh;
-		};
-		1385B1CB20CA091C00C3B6CE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ViroReact_static_lib-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 		1385B23B20CA091C00C3B6CE /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2365,7 +2326,6 @@
 /* Begin XCBuildConfiguration section */
 		131E1ECB20B89A560075D8E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8737B88293C9F8DE1C4F5FB9 /* Pods-ViroReact_release_tests.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2390,7 +2350,6 @@
 		};
 		131E1ECC20B89A560075D8E0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B955E98ED74516070EE079F5 /* Pods-ViroReact_release_tests.release.xcconfig */;
 			buildSettings = {
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2416,7 +2375,6 @@
 		};
 		1385B29A20CA091C00C3B6CE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDD4EDD8C10B59A4481813F9 /* Pods-ViroReact_static_lib.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2443,7 +2401,6 @@
 		};
 		1385B29B20CA091C00C3B6CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24F1137CD82BA3E4D836FBA1 /* Pods-ViroReact_static_lib.release.xcconfig */;
 			buildSettings = {
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2584,13 +2541,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/dist/ViroRenderer",
 				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../Examples/node_modules/react-native/React/**",
 					"$(inherited)/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACH_O_TYPE = staticlib;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
