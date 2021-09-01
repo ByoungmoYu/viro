@@ -140,6 +140,7 @@ RCT_EXPORT_METHOD(setARTrackType:(nonnull NSNumber *)reactTag) {
             }
             session->setTrackingType(VROTrackingType::Front);
             RCTLogInfo(@"after track %d", session->getTrackingType());
+            session->resetSession(true, true);
         }
     }];
 }
