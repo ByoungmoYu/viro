@@ -131,6 +131,7 @@ RCT_EXPORT_METHOD(setARTrackType:(nonnull NSNumber *)reactTag) {
             RCTLogInfo(@"after component");
             VROViewAR *view = (VROViewAR *)[component rootVROView];
             RCTLogInfo(@"after view, got: %@", view);
+            view.getARSession->resetSession(true, true);
             view.getARSession->setTrackingType(VROTrackingType::Front);
             RCTLogInfo(@"after track %@", view.getARSession->getTrackingType());
         }
