@@ -130,9 +130,9 @@ RCT_EXPORT_METHOD(setARTrackType:(nonnull NSNumber *)reactTag) {
             VRTARSceneNavigator *component = (VRTARSceneNavigator *)view;
             RCTLogInfo(@"after component");
             VROViewAR *view = (VROViewAR *)[component rootVROView];
-            RCTLogInfo(@"after view");
+            RCTLogInfo(@"after view, got: %@", view);
             view.getARSession->setTrackingType(VROTrackingType::Front);
-            RCTLogInfo(@"after track");
+            RCTLogInfo(@"after track %@", view.getARSession->getTrackingType());
         }
     }];
 }
