@@ -119,8 +119,7 @@ RCT_EXPORT_METHOD(resetARSession:(nonnull NSNumber *)reactTag
     }];
 }
 
-RCT_EXPORT_METHOD(setARTrackType:(nonnull NSNumber *)reactTag
-                  trackType:(NSString *)trackingType) {
+RCT_EXPORT_METHOD(setARTrackType:(nonnull NSNumber *)reactTag) {
         RCTLogInfo(@"start");
     [self.bridge.uiManager addUIBlock:^(__unused RCTUIManager *uiManager, NSDictionary<NSNumber *, UIView *> *viewRegistry) {
         VRTView *view = (VRTView *)viewRegistry[reactTag];

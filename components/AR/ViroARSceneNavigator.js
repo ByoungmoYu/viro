@@ -44,7 +44,7 @@ var ViroARSceneNavigator = createReactClass({
         /**
           * The React Class to render for this scene.
           */
-        scene: PropTypes.func.isRequired,
+        scene: PropTypes.object.isRequired,
       }).isRequired,
 
       autofocus : PropTypes.bool,
@@ -92,6 +92,7 @@ var ViroARSceneNavigator = createReactClass({
       setWorldOrigin: this._setWorldOrigin,
       project: this._project,
       unproject: this._unproject,
+      setARTrackType: this._setARTrackType,
     };
     this.sceneNavigator = {
       push: this.push,
@@ -106,6 +107,7 @@ var ViroARSceneNavigator = createReactClass({
       setWorldOrigin: this._setWorldOrigin,
       project: this._project,
       unproject: this._unproject,
+      setARTrackType: this._setARTrackType,
     };
   },
   getInitialState: function(): State {
@@ -444,6 +446,10 @@ var ViroARSceneNavigator = createReactClass({
    */
   _resetARSession(resetTracking, removeAnchors) {
     ViroARSceneNavigatorModule.resetARSession(findNodeHandle(this), resetTracking, removeAnchors);
+  },
+
+  _setARTrackType() {
+    ViroARSceneNavigatorModule.setARTrackType(findNodeHandle(this));
   },
 
   /*
